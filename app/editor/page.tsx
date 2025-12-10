@@ -658,8 +658,10 @@ export default function EditorPage() {
                 value={content}
                 onInit={(evt, editor) => (editorRef.current = editor)}
                 onEditorChange={handleEditorChange}
+                licenseKey="gpl"
                 tinymceScriptSrc="/tinymce/tinymce.min.js"
                 init={{
+                  
                   height: "100%",
                   menubar: false,
                   skin: resolvedTheme === "dark" ? "oxide-dark" : "oxide",
